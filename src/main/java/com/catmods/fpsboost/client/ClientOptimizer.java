@@ -54,7 +54,6 @@ public class ClientOptimizer {
         if (FpsBoostConfig.LIMIT_ENTITY_RENDER_DISTANCE.get()) {
             options.entityDistanceScaling().set(FpsBoostConfig.ENTITY_RENDER_DISTANCE.get() / 100.0);
         }
-        options.renderClouds().set(false);
         mc.options.save();
     }
 
